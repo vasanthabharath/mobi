@@ -3,7 +3,13 @@ Weather assignment
 
 
 Integration with [Open Weather Data API](https://openweathermap.org/api) in order to show current and forecast weather data of 5 european cities.
-
+Open Weather Data API
+To complete the proposed exercise two different kinds of APIs are needed.
+For example, to get the current weather data in London:
+http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=3d8b309701a13f65b6
+60fa2c64cdc517
+More details here http://openweathermap.org/current
+It is possible to find more information here http://openweathermap.org/api
 ----------
 
 
@@ -29,12 +35,7 @@ Run end-2-end tests
 
     ng e2e
     
-To use **compiled version**, we should have installed [http-server](https://www.npmjs.com/package/http-server):
 
-    npm install http-server -g
-And in the `dist` folder execute the following command:
-
-    http-server -o --cors
 
 Technologies
 -------------
@@ -55,10 +56,16 @@ About the project
 
 Future implementations or improvements
 -------------
+Exercise
+Please use Open Weather Data to create a single page application that has 2 sub-pages.
+1. Home/landing page: It should display a list of 5 European cities (you can choose the
+ones you prefer). Each city should display the city name, temperature, sunrise time
+and sunset time. Clicking on this tile should open another sub-page as explained in
+point #2 below. (Use routing)
+2. For a clicked city, it should display temperature and sea level for the next 5 days at
+9:00....>I will update this in future
+Achieve responsive design. (You can use bootstrap or any UI library). We would prefer if you
+will deliver the code using BitBucket (private repo) but also a zip file is fine.
+Open Weather Data API   ---->need to write mediaquries
 
- - Create a Component for error handling in the template, passing as parameters: context, error msg, etc.
- - Instead of filtering the forecast data by getting the results that match with the hour: 12:00, the system should calculate the average temperature, humidity and wind during all the hours of each day. This would allow to show the average temperature (for example) during the whole day instead of just the temperature at 12:00.
- - Add an option to view forecast hour in an interval of 3 hours when clicking on a forecast day.
- - Add min/max temperatures.
- - Add a search box with typeahead that finds any country available within OWD API.
 
