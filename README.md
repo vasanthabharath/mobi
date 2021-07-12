@@ -12,7 +12,7 @@ Usage
 
 Clone the repository
 
-    git clone https://github.com/SrAxi/weather-assignment.git
+    git clone https://github.com/vasanthabharath/mobi.git
 
 Install dependencies using [npm](https://www.npmjs.com/)
 
