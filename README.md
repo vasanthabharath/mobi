@@ -9,7 +9,8 @@ For example, to get the current weather data in London:
 http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=3d8b309701a13f65b6
 60fa2c64cdc517
 More details here http://openweathermap.org/current
-It is possible to find more information here http://openweathermap.org/api
+
+
 ----------
 
 
